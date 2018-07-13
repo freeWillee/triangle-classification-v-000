@@ -1,5 +1,5 @@
 require 'pry'
-
+.
 class Triangle
   # write code here
   attr_accessor :array_of_sides
@@ -14,7 +14,7 @@ class Triangle
   def kind
     if !self.not_valid?
       binding.pry
-      if self.any_two_sides_equal?
+      if self.all_sides_equal?
         :equilateral
       elsif self.any_two_sides_equal?
         :isosceles

@@ -24,6 +24,7 @@ class Triangle
       end
   end
 
+  #isosceles triangle definition
   def any_two_sides_equal?
     @array_of_sides.first == @array_of_sides
   end
@@ -39,7 +40,7 @@ class Triangle
     @array_of_sides.uniq.size == 3
   end
 
-
+  #non-negative
   def not_valid?
     @array_of_sides.any? {|side| side <= 0}
   end

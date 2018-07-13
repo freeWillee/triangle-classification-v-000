@@ -56,6 +56,8 @@ class Triangle
     @array_of_sides.any? {|side| side <= 0}
   end
 
+  #triangle equality test
+
   #Custom error exception handling class
   class TriangleError < StandardError
     def message

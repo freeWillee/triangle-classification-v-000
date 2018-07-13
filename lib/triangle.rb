@@ -13,6 +13,7 @@ class Triangle
 
   def kind
     if self.negative_or_zero_sides? || self.inequality_failed?
+      binding.pry
       begin
         raise TriangleError
       rescue TriangleError => error

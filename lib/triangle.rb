@@ -8,7 +8,7 @@ class Triangle
     @array_of_sides << sideTwo
     @array_of_sides << sideThree
   end
-  
+
   def kind
     if self.allPositiveSides?
       if (self.sideOne == self.sideTwo) && (self.sideTwo == sideThree)
@@ -23,8 +23,11 @@ class Triangle
   end
 
   def any_two_sides_equal?
-    combo_array = @array_of_sides.combination(2).to_a
   end
+
+  def valid?
+  end
+  
 
   class TriangleError < StandardError
     def message

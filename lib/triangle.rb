@@ -19,7 +19,9 @@ class Triangle
         :scalene
       else
         begin
-
+        rescue
+        end
+      end
   end
 
   def any_two_sides_equal?
@@ -27,11 +29,12 @@ class Triangle
 
   def valid?
   end
-  
+
 
   class TriangleError < StandardError
     def message
       "invalid triangle!"
     end
   end
+  
 end

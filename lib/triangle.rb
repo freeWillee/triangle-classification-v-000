@@ -64,8 +64,8 @@ class Triangle
 
     sideOne + sideTwo <= sideThree ||
     sideTwo + sideThree <= sideOne ||
-    sideOne + sideTwo <= sideThree
-  
+    sideOne + sideThree <= sideTwo
+
 
   #Custom error exception handling class
   class TriangleError < StandardError

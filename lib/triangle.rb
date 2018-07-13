@@ -10,15 +10,16 @@ class Triangle
   end
 
   def kind
-    if self.allPositiveSides?
-      if (self.sideOne == self.sideTwo) && (self.sideTwo == sideThree)
+    if self.valid?
+      if self.any_two_sides_equal?
         :equilateral
-      elsif (self.sideOne == self.sideTwo) || (self.sideTwo == self.sideThree) || (self.sideOne == self.sideThree)
+      elsif self.any_two_sides_equal?
         :isosceles
-      elsif (self.sideOne != self.sideTwo) && (self.sideTwo != self.sideThree) && (self.sideOne != self.sideThree)
+      elsif self.all_unique_sides?
         :scalene
       else
         begin
+          
         rescue
         end
       end

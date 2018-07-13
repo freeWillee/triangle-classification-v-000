@@ -28,15 +28,17 @@ class Triangle
     @array_of_sides.first == @array_of_sides
   end
 
+  #Equilateral triangle defintion
   def all_sides_equal?
     anchor_side = @array_of_sides.first
     @array_of_sides.all? {|side| anchor_side == side}
   end
 
+  #scalene triangle defintion
   def all_unique_sides?
     @array_of_sides.uniq.size == 3
   end
-  
+
 
   def not_valid?
     @array_of_sides.any? {|side| side <= 0}

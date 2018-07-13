@@ -26,8 +26,8 @@ class Triangle
 
   #isosceles triangle definition
   def any_two_sides_equal?
-    @array_of_sides[0] == @array_of_sides[1] || 
-    @array_of_sides[0] == @array_of_sides[2] || 
+    @array_of_sides[0] == @array_of_sides[1] ||
+    @array_of_sides[0] == @array_of_sides[2] ||
     @array_of_sides[1] == @array_of_sides[2]
   end
 

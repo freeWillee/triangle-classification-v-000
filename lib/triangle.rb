@@ -13,7 +13,6 @@ class Triangle
 
   def kind
     if !self.not_valid?
-      binding.pry
       if self.all_sides_equal?
         :equilateral
       elsif self.any_two_sides_equal?

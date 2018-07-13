@@ -25,7 +25,18 @@ class Triangle
   end
 
   def any_two_sides_equal?
+    @array_of_sides.first == @array_of_sides
   end
+
+  def all_sides_equal?
+    anchor_side = @array_of_sides.first
+    @array_of_sides.all? {|side| anchor_side == side}
+  end
+
+  def all_unique_sides?
+    @array_of_sides.uniq.size == 3
+  end
+  
 
   def not_valid?
     @array_of_sides.any? {|side| side <= 0}

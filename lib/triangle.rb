@@ -12,19 +12,23 @@ class Triangle
   end
 
   def kind
-    if !self.not_valid?
-      if self.all_sides_equal?
+    if self.not_valid?
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+    elsif self.all_sides_equal?
         :equilateral
-      elsif self.any_two_sides_equal?
+    elsif self.any_two_sides_equal?
         :isosceles
-      elsif self.all_unique_sides?
+    elsif self.all_unique_sides?
         :scalene
-      else
-        begin
-          raise TriangleError
-        rescue TriangleError => error
-          puts error.message
-        end
+    else
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
       end
     end
   end
@@ -49,7 +53,7 @@ class Triangle
 
   #non-negative test
   def not_valid?
-    @array_of_sides.any? {|side| side <= 0} 
+    @array_of_sides.any? {|side| side <= 0}
   end
 
   #Custom error exception handling class

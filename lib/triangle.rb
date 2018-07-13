@@ -50,7 +50,7 @@ class Triangle
     @array_of_sides.any? {|side| side <= 0}
   end
 
-  #Custom exception handling class
+  #Custom exception erro handling class
   class TriangleError < StandardError
     def message
       "invalid triangle!"

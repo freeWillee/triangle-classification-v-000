@@ -17,13 +17,13 @@ class Triangle
         :isosceles
       elsif (self.sideOne != self.sideTwo) && (self.sideTwo != self.sideThree) && (self.sideOne != self.sideThree)
         :scalene
-      else 
-        begin 
+      else
+        begin
 
   end
 
-  def allPostiveSides?
-    self.sideOne > 0 && self.sideTwo > 0 && self.sideThree > 0
+  def any_two_sides_equal?
+    combo_array = @array_of_sides.combination(2).to_a
   end
 
   class TriangleError < StandardError

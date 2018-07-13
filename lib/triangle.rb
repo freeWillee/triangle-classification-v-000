@@ -12,7 +12,7 @@ class Triangle
   end
 
   def kind
-    if self.not_valid?
+    if self.negative_or_zero_sides?
       begin
         raise TriangleError
       rescue TriangleError => error

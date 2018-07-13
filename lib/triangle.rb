@@ -52,7 +52,7 @@ class Triangle
   end
 
   #non-negative test
-  def not_valid?
+  def negative_or_zero?
     @array_of_sides.any? {|side| side <= 0}
   end
 

@@ -58,9 +58,9 @@ class Triangle
 
   #triangle inequality test
   def inequality_failed?
-    sideOne = array_of_sides[0]
-    sideTwo = array_of_sides[1]
-    sideThree = array_of_sides[3]
+    sideOne = @array_of_sides[0]
+    sideTwo = @array_of_sides[1]
+    sideThree = @array_of_sides[3]
 
     sideOne + sideTwo <= sideThree ||
     sideTwo + sideThree <= sideOne ||

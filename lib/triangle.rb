@@ -27,7 +27,8 @@ class Triangle
   def any_two_sides_equal?
   end
 
-  def valid?
+  def not_valid?
+    @array_of_sides.any? {|side| side <= 0}
   end
 
 
@@ -36,5 +37,5 @@ class Triangle
       "invalid triangle!"
     end
   end
-  
+
 end

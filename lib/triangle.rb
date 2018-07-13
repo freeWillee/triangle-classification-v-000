@@ -49,7 +49,7 @@ class Triangle
 
   #non-negative test
   def not_valid?
-    @array_of_sides.any? {|side| side <= 0}
+    @array_of_sides.any? {|side| side <= 0} 
   end
 
   #Custom error exception handling class

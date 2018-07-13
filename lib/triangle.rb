@@ -34,7 +34,7 @@ class Triangle
     @array_of_sides.all? {|side| anchor_side == side}
   end
 
-  #scalene triangle defintion
+  #scalene triangle definition
   def all_unique_sides?
     @array_of_sides.uniq.size == 3
   end

@@ -28,7 +28,7 @@ class Triangle
   end
 
   def not_valid?
-    @array_of_sides.any? {|side| side <= 0.0}
+    @array_of_sides.any? {|side| side <= 0}
   end
 
 

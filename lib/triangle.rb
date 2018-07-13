@@ -16,7 +16,7 @@ class Triangle
       binding.pry
       begin
         raise TriangleError
-        binding.binding.pry
+        binding.pry
       rescue TriangleError => error
         puts error.message
       end

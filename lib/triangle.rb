@@ -56,7 +56,16 @@ class Triangle
     @array_of_sides.any? {|side| side <= 0}
   end
 
-  #triangle equality test
+  #triangle inequality test
+  def inequality_failed?
+    sideOne = array_of_sides[0]
+    sideTwo = array_of_sides[1]
+    sideThree = array_of_sides[3]
+
+    sideOne + sideTwo <= sideThree ||
+    sideTwo + sideThree <= sideOne ||
+    sideOne + sideTwo <= sideThree
+  
 
   #Custom error exception handling class
   class TriangleError < StandardError

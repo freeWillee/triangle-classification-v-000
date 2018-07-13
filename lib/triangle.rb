@@ -17,8 +17,8 @@ class Triangle
       begin
         raise TriangleError
         binding.pry
-      rescue TriangleError => error
-        puts error.message
+      # rescue TriangleError => error
+      #   puts error.message
       end
     elsif self.all_sides_equal?
         :equilateral

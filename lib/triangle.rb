@@ -67,7 +67,6 @@ class Triangle
     sideOne + sideThree <= sideTwo
   end
 
-
   #Custom error exception handling class
   class TriangleError < StandardError
     def message

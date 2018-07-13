@@ -60,7 +60,7 @@ class Triangle
   def inequality_failed?
     sideOne = @array_of_sides[0]
     sideTwo = @array_of_sides[1]
-    sideThree = @array_of_sides[3]
+    sideThree = @array_of_sides[2]
 
     sideOne + sideTwo <= sideThree ||
     sideTwo + sideThree <= sideOne ||

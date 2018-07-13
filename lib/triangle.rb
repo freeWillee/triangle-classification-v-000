@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    if self.valid?
+    if !self.not_valid?
       if self.any_two_sides_equal?
         :equilateral
       elsif self.any_two_sides_equal?
